@@ -67,7 +67,6 @@ pub struct CrateMetadata {
     pub cnum_map: Lock<CrateNumMap>,
     pub cnum: CrateNum,
     pub codemap_import_info: RwLock<Vec<ImportedFileMap>>,
-    pub attribute_cache: Lock<[Vec<Option<Lrc<[ast::Attribute]>>>; 2]>,
 
     pub root: schema::CrateRoot,
 
