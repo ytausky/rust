@@ -242,7 +242,6 @@ impl<'a> CrateLoader<'a> {
             cnum_map: Lock::new(cnum_map),
             cnum,
             codemap_import_info: RwLock::new(vec![]),
-            attribute_cache: Lock::new([Vec::new(), Vec::new()]),
             dep_kind: Lock::new(dep_kind),
             source: cstore::CrateSource {
                 dylib,
